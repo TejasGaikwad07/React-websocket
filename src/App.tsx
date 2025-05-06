@@ -15,7 +15,7 @@ function App() {
       console.log("Message received", message.data);
       setLatestMessage(message.data);
     };
-    return () => {
+    return () => { 
       socket.close();
     };
   }, []);
